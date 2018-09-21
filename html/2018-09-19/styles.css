@@ -1,0 +1,12 @@
+.Header {
+  height: 200px;
+  background-color: purple;
+}
+.Ten {
+  color: lightgreen;
+  text-align: center;
+}
+
+.Content {
+  height: 1000px;
+}

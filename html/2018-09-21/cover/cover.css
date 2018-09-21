@@ -1,0 +1,16 @@
+.body-custom {
+  height: 100vh;
+}
+
+.Anchor-custom-active {
+  border-bottom-width: 0.25rem !important;
+}
+
+.Anchor-custom {
+  border-bottom: 0.25rem solid transparent;
+}
+
+.Anchor-custom:hover {
+  text-decoration: none;
+  border-bottom: 0.25rem solid greenyellow;
+}
