@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+  <!-- <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>1</th>
+        <td>Nam</td>
+        <td>nam@abc.com</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>Whoops</td>
+        <td>whoops@gmail.com</td>
+      </tr>
+    </tbody>
+  </table> -->
+
+  <div id="js-div-table"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+
+    var table = '<table id="js-table" class="table"></table>';
+
+    $('#js-div-table').append(table);
+
+
+    var thead = '<thead id="js-thead"></thead>';
+    $(thead).appendTo('#js-table');
+    var tr = '<tr id="js-tr-head"></tr>';
+    $(tr).appendTo('#js-thead');
+    var th = '<th>#</th><th>Name</th><th>Email</th>';
+    $(th).appendTo('#js-tr-head');
+
+
+    var tbody = ' <tbody></tbody>';
+    $('#js-thead').after(tbody);
+    var trBody = '<tr id="trBody"></tr>';
+    $(trBody).appendTo('tbody');
+    var thBody = ' <th> 1 </th>';
+    var tdBody = '<td> Nam </td><td>nam@gmail.com</td> ';
+    $('#trBody').append(thBody, tdBody);
+
+  </script>
+</body>
+
+</html>

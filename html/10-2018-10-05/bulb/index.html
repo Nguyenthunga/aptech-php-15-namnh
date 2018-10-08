@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+  <!-- <p class="abc" style="color:blue;" id="demo">Nam</p> -->
+
+  <!-- <button onclick="quetNha()">Hien Thong Bao</button> -->
+
+  <!-- <img id="js-image" src="https://picsum.photos/200" alt=""> -->
+
+  <!-- <button onclick="doiAnh()">Doi Anh</button> -->
+  <button id="js-button-tat">Tat</button>
+  <img id="js-image" src="./tat.gif" alt="">
+  <button id="js-button-bat">Bat</button>
+  <button onclick="batTat()">bat/tat</button>
+
+  <script>
+    var a = document.getElementById('js-image');
+    function batTat() {
+
+      // if (a.src === 'http://127.0.0.1:5500/off.gif') {
+      if (a.src.includes('off.gif')) {
+        a.src = "./on.gif";
+      } else {
+        a.src = "./off.gif";
+      }
+    }
+
+    function tat() {
+      a.src = "./off.gif";
+    }
+    function bat() {
+      console.log(a);
+      a.src = "./on.gif";
+      console.log(a);
+    }
+    // function doiAnh() {
+      // var so = 5;
+      // document.getElementById("js-image").src = "https://picsum.photos/400";
+      // var tenAnh = document.getElementById("js-image");
+      // tenAnh.src = "https://picsum.photos/400";
+
+      // console.log(so);
+      // console.log(tenAnh.src);
+    // }
+
+    // function quetNha() {
+      // document.getElementById("demo").style.color = 'red';
+      // console.log(document.getElementById("demo").style.color);
+
+    // }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./custom-jquery.js"></script>
+</body>
+
+</html>
