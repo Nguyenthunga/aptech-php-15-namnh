@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <button id="js-post-button">Get Post</button>
+  <button id="js-button">Click Me Pls !</button>
+  <div id="js-div-data"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#js-post-button').click(function () {
+        $.get('http://101.0.86.110:6699/api/v1/posts?page=1', function (response) {
+          var data = response.data.posts.data;
+          console.log(data.length);
+          for (i = 0; i < data.length; i++) {
+            var div = '<div id="js-div-' + data[i].id + '">';
+            $(div).appendTo('#js-div-data');
+            var h1 = '<h1>' + data[i].title + '</h1>';
+            $(h1).appendTo('#js-div-' + data[i].id);
+          }
+
+        });
+      });
+      $('#js-button').click(function () {
+        // $.get('./data.json', function (response) {
+        $.get('http://laravel-crud.namcoi.com/api/v1/users', function (response) {
+          var table = '<table id="js-table" class="table"></table>';
+          $('#js-div-table').append(table);
+
+
+          var thead = '<thead id="js-thead"></thead>';
+          $(thead).appendTo('#js-table');
+          var tr = '<tr id="js-tr-head"></tr>';
+          $(tr).appendTo('#js-thead');
+          var th = '<th>#</th><th>Name</th><th>Email</th>';
+          $(th).appendTo('#js-tr-head');
+
+
+
+          var tbody = ' <tbody></tbody>';
+          $('#js-thead').after(tbody);
+
+          for (i = 0; i < response.users.length; i++) {
+            var trBody = '<tr id="trBody-' + b.users[i].id + '"></tr>';
+            $(trBody).appendTo('tbody');
+            var thBody = ' <th>' + (i + 1) + '</th>';
+            var tdBody = '<td>' + b.users[i].name + '</td><td>' + b.users[i].email + '</td> ';
+            $('#trBody-' + b.users[i].id).append(thBody, tdBody);
+          }
+        });
+      })
+    });
+  </script>
+</body>
+
+</html>

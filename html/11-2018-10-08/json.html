@@ -1257,7 +1257,6 @@
     // document.body.appendChild(e);
 
     var table = '<table id="js-table" class="table"></table>';
-
     $('#js-div-table').append(table);
 
 
@@ -1273,7 +1272,7 @@
     var tbody = ' <tbody></tbody>';
     $('#js-thead').after(tbody);
 
-    for (i = 0; i < b.users.length - 1; i++) {
+    for (i = 0; i < b.users.length; i++) {
       var trBody = '<tr id="trBody-' + b.users[i].id + '"></tr>';
       $(trBody).appendTo('tbody');
       var thBody = ' <th>' + (i + 1) + '</th>';
