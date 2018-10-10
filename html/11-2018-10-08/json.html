@@ -2,6 +2,8 @@
 <html lang="en">
 
 <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <div id="js-div-table"></div>
 
   <script>
     var a = {
@@ -13,10 +15,10 @@
 
 
     };
-    var e = document.createElement('h1');
-    var nameE = document.createTextNode(a.info.email);
-    e.appendChild(nameE);
-    document.body.appendChild(e);
+    // var e = document.createElement('h1');
+    // var nameE = document.createTextNode(a.info.email);
+    // e.appendChild(nameE);
+    // document.body.appendChild(e);
 
 
     var b = {
@@ -1249,10 +1251,35 @@
       ]
     };
 
-    var e = document.createElement('h1');
-    var nameE = document.createTextNode(b.users[1].name);
-    e.appendChild(nameE);
-    document.body.appendChild(e);
+    // var e = document.createElement('h1');
+    // var nameE = document.createTextNode(b.users[1].name);
+    // e.appendChild(nameE);
+    // document.body.appendChild(e);
+
+    var table = '<table id="js-table" class="table"></table>';
+
+    $('#js-div-table').append(table);
+
+
+    var thead = '<thead id="js-thead"></thead>';
+    $(thead).appendTo('#js-table');
+    var tr = '<tr id="js-tr-head"></tr>';
+    $(tr).appendTo('#js-thead');
+    var th = '<th>#</th><th>Name</th><th>Email</th>';
+    $(th).appendTo('#js-tr-head');
+
+
+
+    var tbody = ' <tbody></tbody>';
+    $('#js-thead').after(tbody);
+
+    for (i = 0; i < b.users.length - 1; i++) {
+      var trBody = '<tr id="trBody-' + b.users[i].id + '"></tr>';
+      $(trBody).appendTo('tbody');
+      var thBody = ' <th>' + (i + 1) + '</th>';
+      var tdBody = '<td>' + b.users[i].name + '</td><td>' + b.users[i].email + '</td> ';
+      $('#trBody-' + b.users[i].id).append(thBody, tdBody);
+    }
 
   </script>
 </body>
