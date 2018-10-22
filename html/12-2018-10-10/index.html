@@ -9,16 +9,14 @@
   <script>
     $(document).ready(function () {
       $('#js-post-button').click(function () {
-        $.get('http://101.0.86.110:6699/api/v1/posts?page=1', function (response) {
+        $.get('http://101.0.86.110:6699/api/v1/posts?page=2', function (response) {
           var data = response.data.posts.data;
-          console.log(data.length);
           for (i = 0; i < data.length; i++) {
             var div = '<div id="js-div-' + data[i].id + '">';
             $(div).appendTo('#js-div-data');
             var h1 = '<h1>' + data[i].title + '</h1>';
             $(h1).appendTo('#js-div-' + data[i].id);
           }
-
         });
       });
       $('#js-button').click(function () {

@@ -1,0 +1,23 @@
+.Header{
+    height:40px;
+}
+.Header--Style{
+    height:100px;
+}
+.Header2{
+    height:42px;
+}
+.Body--Style{
+    height:400px;
+}
+.Body5{
+    height:100px;
+}
+.Body1{
+    border-top: 0.1px solid;
+    height:500px;
+}
+.Footer{
+    border-top: 0.1px solid;
+    height:50px;
+}

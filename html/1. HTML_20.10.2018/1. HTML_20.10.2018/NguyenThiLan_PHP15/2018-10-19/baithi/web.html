@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        ul:hover li:hover{
+            background-color: gray;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="./web.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="Header container-fluid bg-light mr-3 border-bottom shadow">
+        <div class="row p-3 d-flex align-items-center">
+            <div class="col-md-6 col-6 d-flex flex-row">
+                <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2018/04/1525068825bootstrap-logo-png-logo-228.png"
+                    class="Header__ImageB--size">
+                <h2 class="pl-3 d-none d-md-block"> Bootstrap 4</h2>
+            </div>
+            <div class="col-6 d-block d-md-none d-flex justify-content-end">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-list-alt"></i>
+                </button>
+            </div>
+            <div class="col-md-6">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav w-100 h-100 d-flex justify-content-around">
+                            <li class="nav-item">
+                                <a class="nav-link " href="#"> <b> Home </b>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#"> <b> About Us</b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> <b>Help</b> </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#"> <b>Contact </b> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="Carousel container-fluid">
+        <div class="row">
+            <div class="col-md-12 d-none d-md-block">
+                <div id="carouselExampleControls" class="carousel slide w-100" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="Body__Image--Carousel1"></div>
+                            <div class="carousel-caption d-flex flex-column align-items-start">
+                                <h1> Example headline. </h1>
+                                <p> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                                <button type="button" class="btn btn-success"> SIGN UP </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="Body__Image--Carousel2"></div>
+                            <div class="carousel-caption">
+                                <h1> Another example headline. </h1>
+                                <p> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <button type="button" class="btn btn-success"> Learn more </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="Body__Image--Carousel3"></div>
+                            <div class="carousel-caption d-flex flex-column align-items-end">
+                                <h1> One more for good measure. </h1>
+                                <p> Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                <button type="button" class="btn btn-success"> Browse gallery </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Content1 container border-bottom">
+        <div class="row mt-5 mb-5">
+            <div class="col-12 col-md-4 ">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="https://images.unsplash.com/photo-1539860033517-9dcef150c133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ec5ac6ffaf5ab9d7513fe8f4bc64ad49&auto=format&fit=crop&w=750&q=80"
+                        class="Header__Image1 ">
+                    <h2 class="text-center"> Heading </h2>
+                    <p class="text-center"> Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam
+                        id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac,
+                        vestibulum at eros. Praesent commodo cursus magna. </p>
+                    <button class="btn btn-dark text-white"> Veiw details <span> <i class="fas fa-angle-double-right"></i>
+                        </span></button>
+                </div>
+
+            </div>
+            <div class="d-md-block d-none col-md-4 ">
+                <div class="d-flex flex-column align-items-center ">
+                    <img src="https://images.unsplash.com/photo-1539822175783-72ee16b6cf4e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=186472010fc0c413650c095092f993d1&auto=format&fit=crop&w=750&q=80"
+                        class="Header__Image1">
+                    <h2 class="text-center"> Heading </h2>
+                    <p class="text-center"> Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam
+                        id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac,
+                        vestibulum at eros. Praesent commodo cursus magna. </p>
+                    <button class="btn btn-dark text-white"> Veiw details <span> <i class="fas fa-angle-double-right"></i>
+                        </span></button>
+                </div>
+
+            </div>
+            <div class="d-md-block d-none col-md-4 ">
+                <div class="d-flex flex-column align-items-center">
+                    <img src="https://images.unsplash.com/photo-1539786486330-1860202d38d1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=39fd8ab606cf106b12d172fe2689da57&auto=format&fit=crop&w=750&q=80"
+                        class="Header__Image1">
+                    <h2 class="text-center"> Heading </h2>
+                    <p class="text-center"> Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam
+                        id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac,
+                        vestibulum at eros. Praesent commodo cursus magna. </p>
+                    <button class="btn btn-dark text-white"> Veiw details <span> <i class="fas fa-angle-double-right"></i>
+                        </span></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="Content2 container ">
+        <div class="row mt-5 mb-3 ">
+            <div class="col-md-7 col-12 d-flex flex-column align-items-start justify-content-center">
+                <h3 class="text-muted">
+                    <b class="text-dark"> First featurette heading.</b> It'll blow your mind.
+                </h3>
+                <p class="text-muted"> Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                    felis euismod
+                    semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac
+                    cursus commodo. </p>
+            </div>
+            <div class="col-md-5 col-12">
+                <img src="https://images.unsplash.com/photo-1539865354305-d3a4ce59a621?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=380def47aeff49efcc4c7bd99e9c04f0&auto=format&fit=crop&w=334&q=80"
+                    class="Body__Image--size">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-7 col-12 order-md-2 d-flex flex-column align-items-start justify-content-center">
+                <h3 class="text-muted">
+                    <b class="text-dark"> Oh yeah, it's that good. </b> See for yourself.
+                </h3>
+                <p class="text-muted"> Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                    felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+                    dapibus, tellus ac cursus commodo. </p>
+            </div>
+            <div class="col-md-5 order-md-1 col-12">
+                <img src="https://images.unsplash.com/photo-1539813171823-22916c9fa1d9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b0ed9f9fddfffe414371adc676197f2&auto=format&fit=crop&w=334&q=80"
+                    class="Body__Image--size">
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-7 col-12 d-flex flex-column align-items-start justify-content-center">
+                <h3 class="text-muted">
+                    <b class="text-dark"> And lastly, this one. </b> Checkmate.
+                </h3>
+                <p class="text-muted"> Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                    felis euismod
+                    semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac
+                    cursus commodo. </p>
+            </div>
+            <div class="col-md-5 col-12">
+                <img src="https://images.unsplash.com/photo-1539806943008-329897720dd3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ca69a33df520a0f7f48953311170ea5&auto=format&fit=crop&w=750&q=80"
+                    class="Body__Image--size">
+            </div>
+        </div>
+    </div>
+    <div class="Footer container-fluid border-top">
+        <div class="row mt-3 mb-3">
+            <div class="col-md-8 col-8 d-flex justify-content-center">
+                <p> <span> <i class="far fa-copyright"></i> </span> 2017-2018 Company, Inc. <a href=""> Privacy </a> <a
+                        href=""> Terms </a> </p>
+            </div>
+            <div class="col-md-4 col-4 ">
+                <a href=""> Back to top </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

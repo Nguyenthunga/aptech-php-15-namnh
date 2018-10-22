@@ -1,0 +1,16 @@
+.Header {
+  &__Navigation {
+    &--size {
+      height: 50px;
+    }
+    &--bg {
+      background-color: blue;
+    }
+  }
+  &__Logo {
+    font-size: 50px;
+  }
+}
+
+.Content {
+}

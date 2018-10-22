@@ -1,0 +1,16 @@
+.Header__Navigation {
+  line-height: 5px;
+}
+
+.Header__Navigation--size {
+  height: 50px;
+}
+
+.Header__Navigation--bg {
+  background-color: blue;
+}
+
+.Header__Logo {
+  font-size: 50px;
+}
+/*# sourceMappingURL=styles.css.map */

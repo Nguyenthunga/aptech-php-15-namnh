@@ -1,0 +1,33 @@
+.TOP{
+    &__Navs{
+       &--sizeLogo{
+          height: 45px;
+          width: 45px; 
+       }
+       &--bg{
+        background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)), url(./18.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+       }
+       &--box{
+           box-shadow: 0px 0px 5px;
+         color: gray;
+} 
+    }
+
+}
+.MID{
+    &__Content{
+        &--bg{
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)), url(./7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+        }
+        &--color{
+            color: gray;
+        }
+    }
+}

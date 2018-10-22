@@ -1,0 +1,93 @@
+.Header {
+  height: 100px;
+}
+
+.Header__shadow {
+  -webkit-box-shadow: 5px 10px  #f7f1f1;
+          box-shadow: 5px 10px  #f7f1f1;
+}
+
+.Header__navitem {
+  color: black;
+}
+
+.Header__navitem:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.Header__logo {
+  height: 10px;
+  width: 10px;
+}
+
+.Header__bar {
+  background-color: black;
+  color: white;
+}
+
+.Div__Text {
+  color: black;
+  text-decoration: none;
+  height: 40px;
+}
+
+.Div__Text:hover {
+  color: white;
+  text-decoration: none;
+}
+
+h5:hover {
+  background-color: black;
+  color: white;
+}
+
+.Content__background--img {
+  background-image: url("https://images.unsplash.com/photo-1497262693247-aa258f96c4f5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e05d78f4a669263ea3a92b651672a035&auto=format&fit=crop&w=324&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  color: rgba(0, 0, 255, 0.747);
+}
+
+li {
+  float: left;
+}
+
+.Carousel__background1 {
+  background-image: url("https://images.unsplash.com/photo-1530973954043-dc7f4d22117c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e2e800207967b87a2150901167547812&auto=format&fit=crop&w=752&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.Carousel__background2 {
+  background-image: url("https://images.unsplash.com/photo-1469307415047-74eefe6155a0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3a66484a48fb0b081dba818554ad39f0&auto=format&fit=crop&w=750&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.Carousel__background3 {
+  background-image: url("https://images.unsplash.com/photo-1530590212472-045fefe45627?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a2300acd3086493140d964b24296028c&auto=format&fit=crop&w=750&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.Carousel__li {
+  width: 15px;
+  height: 15px;
+}
+/*# sourceMappingURL=style.css.map */

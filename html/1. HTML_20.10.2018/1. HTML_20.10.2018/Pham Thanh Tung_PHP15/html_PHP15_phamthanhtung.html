@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles_custom.css" />
+</head>
+
+<body>
+    <div class="Header__Title container bg-light">
+        <div class="group-header p-2">
+            <div class="row h-100 d-flex justify-content-between align-items-center">
+                <div class="col-md-3">
+                    <a class="text-muted h5 d-none d-md-block m-0" href="">Sign up</a>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <a class="Blog--logo h1 text-dark">BUY PHOTOS</a>
+                </div>
+                <div class="col-md-3 d-flex justify-content-end">
+                    <button type="button" id="bt_animate_desktop" class="btn btn-outline-secondary d-none d-md-block">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Header__Navigation--desktop container bg-light d-none d-md-block">
+        <div class="row h-100">
+            <div class="col-12">
+                <div class="nav-scroller py-1 mb-2">
+                    <nav class="nav d-flex justify-content-around flex-column flex-md-row">
+                        <a class="nav-link text-muted active" href="#">HOME</a>
+                        <a class="nav-link text-muted" href="#">PRODUCT</a>
+                        <a class="nav-link text-muted" href="#">HELP</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Header__Navigation--phone container bg-light d-block d-md-none">
+        <div class="row h-100 pb-1">
+            <div id="navbarContent" style="display: none;" class="col-12">
+                <div class="d-flex flex-row">
+                    <div class="col-6">
+                        <nav class="d-flex flex-column mt-2">
+                            <a class="text-muted active" href="#">HOME</a>
+                            <a class="text-muted" href="#">PRODUCT</a>
+                            <a class="text-muted" href="#">HELP</a>
+                        </nav>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-column mt-2">
+                            <h5 class="text-dark">Contact</h5>
+                            <a class="text-muted active" href="#">Follow on Twitter</a>
+                            <a class="text-muted" href="#">Like on Facebook</a>
+                            <button type="button" id="bt_animate_phone" class="btn btn-outline-secondary w-100 mt-2">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row h-100">
+            <div class="col-6 d-flex align-items-center">
+                <p class="mb-0">
+                    <i class="fas fa-camera icon-white"></i>
+                    <label class="ml-1 h4 text-dark">HOME</label>
+                </p>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <button id="bt_toggler" class="navbar-toggler" type="button" data-toggle="collapse">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Content__Carousel container bg-light d-none d-md-block py-3">
+        <div class="row h-100">
+            <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="bg-danger" style="width: 100%; height: 300px;
+                                background-image: url('https://picsum.photos/1200/400');
+                                background-position: center;
+                                background-size: cover;
+                                ">
+                                <div class="carousel-caption">
+                                    <h3>Top 1 rating</h3>
+                                    <p>Thank you!</p>
+                                    <button type="button" class="btn btn-primary">Click for more</button>
+                                    <button type="button" class="btn btn-success">Order photo</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="bg-success" style="width: 100%; height: 300px;
+                                background-image: url('https://picsum.photos/1200/250');
+                                background-position: center;
+                                background-size: cover;
+                                ">
+                                <div class="carousel-caption">
+                                    <h3>Top 2 rating</h3>
+                                    <p>Thank you!</p>
+                                    <button type="button" class="btn btn-primary">Click for more</button>
+                                    <button type="button" class="btn btn-success">Order photo</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="bg-warning" style="width: 100%; height: 300px;
+                                background-image: url('https://picsum.photos/900/300');
+                                background-position: center;
+                                background-size: cover;
+                                ">
+                                <div class="carousel-caption">
+                                    <h3>Top 3 rating</h3>
+                                    <p>Thank you!</p>
+                                    <button type="button" class="btn btn-primary">Click for more</button>
+                                    <button type="button" class="btn btn-success">Order photo</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Content__Photos container bg-light">
+        <div class="row h-100 pt-3">
+            <div class="col-12 col-md-3">
+                <div class="card flex-column mb-4 shadow-sm">
+                    <img class="flex-auto" data-src="" alt="Thumbnail [200x300]" style="width: 100%; height: 300px;" src="https://picsum.photos/200/250/?random" data-holder-rendered="true">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Photo Title</a>
+                        </h3>
+                        <p class="card-text mb-auto">To additional content.</p>
+                        <div class="mb-1 text-muted">Last update 4 mins ago</div>
+                        <button type="button" class="btn btn-warning w-100">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card flex-column mb-4 shadow-sm">
+                    <img class="flex-auto" data-src="" alt="Thumbnail [200x300]" style="width: 100%; height: 300px;" src="https://picsum.photos/200/260/?random" data-holder-rendered="true">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Photo Title</a>
+                        </h3>
+                        <p class="card-text mb-auto">To additional content.</p>
+                        <div class="mb-1 text-muted">Last update 4 mins ago</div>
+                        <button type="button" class="btn btn-warning w-100">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card flex-column mb-4 shadow-sm">
+                    <img class="flex-auto" data-src="" alt="Thumbnail [200x300]" style="width: 100%; height: 300px;" src="https://picsum.photos/200/270/?random" data-holder-rendered="true">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Photo Title</a>
+                        </h3>
+                        <p class="card-text mb-auto">To additional content.</p>
+                        <div class="mb-1 text-muted">Last update 4 mins ago</div>
+                        <button type="button" class="btn btn-warning w-100">Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card flex-column mb-4 shadow-sm">
+                    <img class="flex-auto" data-src="" alt="Thumbnail [200x300]" style="width: 100%; height: 300px;" src="https://picsum.photos/200/280/?random" data-holder-rendered="true">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Photo Title</a>
+                        </h3>
+                        <p class="card-text mb-auto">To additional content.</p>
+                        <div class="mb-1 text-muted">Last update 4 mins ago</div>
+                        <button type="button" class="btn btn-warning w-100">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Footer__Info container bg-light">
+        <div class="group-footer p-2 border-bottom">
+            <div class="row h-100 d-flex justify-content-between ">
+                <div class="col-10 col-md-8">
+                    <a class="text-muted h6" href="">© 2018 BUY PHOTOS. All rights reserved</a>
+                    <p class="text-muted m-0">Address: Danang city</p>
+                    <p class="text-muted m-0">Phone: +84999.999.999</p>
+                    <p class="text-muted m-0">Email: myalbum@album.com</p>
+                </div>
+                <div class="col-2 d-none d-md-flex flex-column ">
+                    <h5 class="text-muted font-weight-bold">Navigation</h5>
+                    <a class="h6 text-muted active" href="#">HOME</a>
+                    <a class="h6 text-muted" href="#">PRODUCT</a>
+                    <a class="h6 text-muted" href="#">HELP</a>
+                </div>
+                <div class="col-2 d-flex flex-column">
+                    <h5 class="text-muted font-weight-bold">About</h5>
+                    <a class="h6 text-muted active" href="#">History</a>
+                    <a class="h6 text-muted" href="#">News</a>
+                    <a class="h6 text-muted" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include JS file here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="processing.js" charset="UTF-8"></script>
+</body>
+
+</html>
