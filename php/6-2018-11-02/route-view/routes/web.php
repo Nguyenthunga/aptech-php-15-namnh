@@ -20,7 +20,9 @@ Route::get('/nam', function () {
 
 // Route::get('/quetNha', 'Controller@hello');
 
-Route::get('/quetNha', function () {
-    $users = DB::table('users')->get();
-    return view('welcome', ['users' => $users]);
-});
+// Route::get('/quetNha', function () {
+//     $users = DB::table('users')->get();
+//     return view('welcome', ['users' => $users]);
+// });
+
+Route::get('/users', 'Controller@index');

@@ -18,4 +18,10 @@ class Controller extends BaseController
         // $roles = DB::table('roles')->get();
         return view('welcome', ['users' => $users]);
     }
+
+    public function index()
+    {
+        $users = DB::table('users')->get();
+        return view('index', ['users' => $users]);
+    }
 }
