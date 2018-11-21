@@ -10,7 +10,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::with('category')->take(2)->get();
-
+return $posts;
         return view('index', ['posts' => $posts]);
     }
 }

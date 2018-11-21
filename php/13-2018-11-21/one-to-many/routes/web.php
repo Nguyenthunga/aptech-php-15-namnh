@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/trang-chu', 'PostController@index');
+
+Route::get('/categories','CategoryController@index');
