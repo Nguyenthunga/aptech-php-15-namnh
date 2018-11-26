@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 Route::get('/index', function () {
     $posts = App\Post::with('categories')->get();
-    return $posts;
+    return view('index', ['posts' => $posts]);
 });

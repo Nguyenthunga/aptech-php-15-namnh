@@ -1,0 +1,11 @@
+@extends('master.master') 
+@section('content')
+<div>
+  {{$post->id}}
+</div>
+<h1>{{$post->title}}</h1>
+<i>{{$post->description}}</i>
+<div>
+  {!!$post->content!!}
+</div>
+@endsection
